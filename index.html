@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JavaScript Practice</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #74ebd5, #9face6);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      text-align: center;
+    }
+    h1 {
+      font-size: 40px;
+      padding: 20px 40px;
+      background: rgba(0, 0, 0, 0.3);
+      border-radius: 15px;
+      box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+      animation: fadeIn 2s ease-in-out;
+    }
+    p {
+      margin-top: 15px;
+      font-size: 18px;
+      background: rgba(0, 0, 0, 0.2);
+      padding: 10px 20px;
+      border-radius: 8px;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <h1>My name is Neeraj Makhija</h1>
+  <p>Check the console for JavaScript outputs.</p>
+
+
+  <script>
+    
+    // 1. print numbers from 1 to 10
+for (let i = 1; i <= 10; i++) {
+  console.log(i);
+}
+
+
+
+
+
+// 2. print odd numbers less than 100
+for (let i = 1; i < 100; i++) {
+  if (i % 2 !== 0) {
+    console.log(i);
+  }
+}
+
+
+
+
+
+// 3. multiplication table of 7
+for (let i = 1; i <= 10; i++) {
+  console.log("7 x " + i + " = " + (7 * i));
+}
+
+
+
+
+
+
+
+
+
+
+// 5. sum of numbers from 1 to 10
+let total = 0;
+for (let i = 1; i <= 10; i++) {
+  total += i;
+}
+console.log("Sum = " + total);
+
+
+
+
+
+// 6. reverse a number
+let x = 32243954938273;
+let rev = x.toString().split("").reverse().join("");
+console.log("Reversed: " + rev);
+
+
+
+
+
+
+
+
+
+
+// 8. join array with +
+let colors = ["Red", "Green", "Blue"];
+console.log(colors.join(" + "));
+
+// 9. sort array
+let arr = [-3, 8, 7, 6, 5, -4, 3, 2, 1];
+arr.sort(function(a, b) {
+  return a - b;
+});
+console.log(arr);
+
+
+
+
+
+// 10. sum of odd numbers between 10 and 30
+let sumOdd = 0;
+for (let i = 11; i <= 30; i++) {
+  if (i % 2 !== 0) {
+    sumOdd += i;
+  }
+}
+console.log("Sum = " + sumOdd);
+
+
+
+
+
+
+
+
+
+// 12. sum of array
+let numbers = [1, 2, 3, 4, 5];
+let s = 0;
+for (let i = 0; i < numbers.length; i++) {
+  s += numbers[i];
+}
+console.log("Sum of array = " + s);
+
+
+
+
+
+// 13. average of array
+let arr2 = [1, 2, 3, 4, 5];
+let s2 = 0;
+for (let i = 0; i < arr2.length; i++) {
+  s2 += arr2[i];
+}
+let avg = s2 / arr2.length;
+console.log("Average = " + avg);
+
+
+
+
+
+// 14. positive numbers only
+function onlyPositive(arr) {
+  let res = [];
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] > 0) {
+      res.push(arr[i]);
+    }
+  }
+  return res;
+}
+console.log(onlyPositive([-3, 5, -1, 7, 0, 9]));
+
+
+
+
+
+// 15. max number in array
+let arr3 = [3, 7, 1, 9, 2, 15, 8];
+let max = arr3[0];
+for (let i = 1; i < arr3.length; i++) {
+  if (arr3[i] > max) {
+    max = arr3[i];
+  }
+}
+console.log("Max = " + max);
+
+
+  </script>
+</body>
+</html>
